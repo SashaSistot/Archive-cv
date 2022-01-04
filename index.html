@@ -6,36 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сurriculum vitae Sasha Sistot</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&family=Urbanist:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <div class="conteiner">
+        <nav class="nav">
             <ul class="menu">
-                <li class="menu"><a class="menu" href="#cont">Contact</a></li>
-                <li class="menu"><a class="menu" href="#me">About me</a></li>
-                <li class="menu"><a class="menu" href="#qual">Qualification</a></li>
-                <li class="menu"><a class="menu" href="#code-ex">Code examples</a></li>
-                <li class="menu"><a class="menu" href="#work-exp">Work experience</a></li>
-                <li class="menu"><a class="menu"href="#trai">Training</a></li>
-                <li class="menu"><a class="menu" href="#lang">Language</a></li>
+                <li class="menu-item"><a class="menu-link" href="#cont">Contact</a></li>
+                <li class="menu-item"><a class="menu-link" href="#me">About me</a></li>
+                <li class="menu-item"><a class="menu-link" href="#qual">Qualification</a></li>
+                <li class="menu-item"><a class="menu-link" href="#code-ex">Code examples</a></li>
+                <li class="menu-item"><a class="menu-link" href="#work-exp">Work experience</a></li>
+                <li class="menu-item"><a class="menu-link"href="#trai">Training</a></li>
+                <li class="menu-item"><a class="menu-link" href="#lang">Language</a></li>
             </ul>
         </nav>
+        </div>
+    </header>
+    <main class="main-container">
+    <div class="container">
         <section class="caps">
             <img src="imeges/6399575077.png" alt="photo Sasha Sistot for official documents">
             <h1>Aleksandr Sereda</h1>
         </section>
-    </header>
-    <main>
-        <section class="Contacts">
+        <section class="section" class="Contacts">
             <h2 id="cont">Contact</h2>
             <ul class="Contacts">
                 <li class="Contacts">+7 (916) 421-77-09</li>
-                <li class="Contacts" >E-mail: <a href="mailto: sistot.mytishchi@yandex.ru">sistot.mytishchi@yandex.ru</a></li>
-                <li class="Contacts">Telegram: <a href="https://web.telegram.org/k/">@_SashaS</a></li>
-                <li class="Contacts">Discord: <a href="https://discord.gg/rwrpmc48">Sasha Sistot#0077</a></li>
+                <li class="Contacts" >E-mail: <a class="contakt-link" href="mailto: sistot.mytishchi@yandex.ru">sistot.mytishchi@yandex.ru</a></li>
+                <li class="Contacts">Telegram: <a class="contakt-link" href="https://web.telegram.org/k/">@_SashaS</a></li>
+                <li class="Contacts">Discord: <a class="contakt-link" href="https://discord.gg/rwrpmc48">Sasha Sistot#0077</a></li>
             </ul>
         </section>
-        <section class="About-me">
+        <section class="section" class="About-me">
             <h2 id="me">About me</h2>
             <p class="About-me">I live: in Russia, in Moscow. I’m 40 years old.<br>The main purpose of my training is to change my profession. I am very attracted to the idea of becoming a software developer in the future. I decided to start with frontend development.</p>
             <p class="About-me">I do this because:
@@ -46,7 +52,7 @@
             </p>
                 <p class="About-me">There is no practical experience in programming. But there is a desire.</p>
         </section>
-        <section class="Qual">
+        <section class="section" class="Qual">
         <h2 id="qual">Qualification</h2>
         <p class="Qual">I’m a basic user. No experience.</p>
         <ul class="Qual">
@@ -55,6 +61,7 @@
             <li class="Qual">CorelDRAW</li>
         </ul>
         <h3 id="code-ex">Code examples</h3>
+        <p class="code">The function of finding the smallest divisor of a number:</p>
         <pre>
         <code>
     const smallestDivisor = (num) => {
@@ -75,17 +82,19 @@
         <h3 id="work-exp">Work experience</h3>
         <p class="Qual" class="work">No experience.</p>
         </section>
-        <section class="Training">
+        <section class="section" class="Training">
             <h2 id="trai">Training</h2>
             <ol class="Training">
                 <li class="Training"><a class="Training" href="https://mpei.ru/Pages/default.aspx" title="MPEI">Moscow Power Engineering Institute</a></li>
                 <li class="Training"><a class="Training" href="https://stepik.org/users/439629434" title="stepik">On-line courses Stepik</a></li>
             </ol>
+            <section class="Language">
+                <h2 id="lang">Language</h2>
+                <p class="Language">Beginner</p>
+            </section>
         </section>
-        <section class="Language">
-            <h2 id="lang">Language</h2>
-            <p class="Language">Beginner</p>
-        </section>
+
+    </div>
     </main>
     <footer>
         <a class="footer" href="https://rs.school/js-stage0/" target="_blank" title="RS School-is a free course run by the developer community"><img src="imeges/rsscool.jpg" alt="rs.school"></a>
